@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="author" content="" />
+    <meta name="format-detection" content="telephone=no, email=no" />
+    <meta name="renderer" content="webkit">
+    <meta name="description" content="" />
+    <meta name="keywords" content="" />
+    <title>e管家您贴心的期权管家-首页</title>
+    <link rel="stylesheet" type="text/css" href="__HCSS__/slick.css">
+    <link rel="stylesheet" type="text/css" href="__HCSS__/base-v1.4.css">
+    <link rel="stylesheet" type="text/css" href="__HCSS__/style.css">
+    <link rel="icon" type="image/x-icon" href="../favicon.ico"  />
+    <!--[if lt IE 9]>
+    <script src="https://cdn.bootcss.com/html5shiv/r29/html5.min.js"></script>
+    <![endif]-->
+</head>
+<body class="index">
+<!--header start-->
+<include file="Public:header" />
+<!--header end-->
+<section class="banner">
+    <foreach name="banner" item="v">
+        <div>
+            <img src="__UPLOAD__/{$v.banner_path}">
+        </div>
+    </foreach>
+</section>
+<foreach name="title_img" item="v">
+    <if condition="$v['order_num'] lt 3">
+        <section class="{$v.class_name}" style="background-image: url(__UPLOAD__/{$v.background_img});">
+            <div class="container">
+                <h1>{$v.title}</h1>
+                <p>
+                    {$v.content}
+                </p>
+                <div class="deco tac">
+                    <img src="__UPLOAD__/{$v.img_path}"></div>
+            </div>
+        </section>
+    <else />
+        <section class="{$v.class_name}" style="background-image: url(__UPLOAD__/{$v.background_img});">
+            <div class="container">
+                <h1>{$v.title}</h1>
+                <p>
+                    {$v.content}
+                </p>
+                <div class="deco clearfix">
+                    <div class="erweima fr">
+                        <div class="item ib">
+                            <img src="__UPLOAD__/{$qrcode.code_img}">
+                            <p>微信公众号</p>
+                        </div>
+                        <div class="item ib">
+                            <img src="__UPLOAD__/{$appcode.code_img}">
+                            <p>e管家APP</p>
+                        </div>
+                    </div>
+                    <img class="fr" src="__UPLOAD__/{$v.img_path}"></div>
+            </div>
+        </section>
+    </if>
+</foreach>
+<!--footer start-->
+<include file="Public:footer" />
+<!--footer end-->
+<script src="__HJS__/jquery-1.12.4.min.js"></script>
+<script src="__HJS__/slick.min.js"></script>
+<script src="__HJS__/common.js"></script>
+<script type="text/javascript">
+    $(function() {
+        $('.banner').slick({
+            arrows:false,
+            dots: true,
+            infinite: true,
+            autoplay: true,
+            autoplaySpeed: 2000,
+        });
+    });
+</script>
+</body>
+</html>

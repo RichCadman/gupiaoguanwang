@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="author" content=""/>
+    <meta name="format-detection" content="telephone=no, email=no"/>
+    <meta name="renderer" content="webkit">
+    <meta name="description" content=""/>
+    <meta name="keywords" content=""/>
+    <title>e管家您贴心的期权管家-e计划</title>
+    <link rel="stylesheet" type="text/css" href="__HCSS__/slick.css">
+    <link rel="stylesheet" type="text/css" href="__HCSS__/base-v1.4.css">
+    <link rel="stylesheet" type="text/css" href="__HCSS__/style.css">
+    <link rel="icon" type="image/x-icon" href="../favicon.ico"  />
+    <!--[if lt IE 9]>
+    <script src="https://cdn.bootcss.com/html5shiv/r29/html5.min.js"></script>
+    <![endif]-->
+</head>
+<body class="index service eproject">
+<!--header start-->
+<include file="Public:header" />
+<!--header end-->
+<section class="banner">
+    <foreach name="banner" item="v">
+        <div>
+            <img src="__UPLOAD__/{$v.banner_path}">
+        </div>
+    </foreach>
+</section>
+<section class="sec4 tac">
+    <div class="container">
+        <ul>
+            <li>
+                <img src="__HIMG__/4.png">
+                <p>跟着专业团队投资</p>
+            </li>
+            <li>
+                <img src="__HIMG__/5.png">
+                <p>专业投资策略</p>
+            </li>
+            <li>
+                <img src="__HIMG__/6.png">
+                <p>安心跟投，坐享收益</p>
+            </li>
+        </ul>
+    </div>
+</section>
+<foreach name="title_img" item="v">
+    <section class="{$v.class_name}" style="background-image: url(__UPLOAD__/{$v.background_img});">
+        <div class="container">
+            <h1>{$v.title}</h1>
+            <p>
+                {$v.content}
+            </p>
+            <div class="deco tac">
+                <img src="__UPLOAD__/{$v.img_path}"></div>
+        </div>
+    </section>
+</foreach>
+<section class="sec5">
+    <a href="__APP__/history">历史业绩</a>
+</section>
+<!--footer start-->
+<include file="Public:footer" />
+<!--footer end-->
+<script src="__HJS__/jquery-1.12.4.min.js"></script>
+<script src="__HJS__/slick.min.js"></script>
+<script src="__HJS__/common.js"></script>
+<script type="text/javascript">
+    $(function () {
+        $('.banner').slick({
+            arrows: false,
+            dots: true,
+            infinite: true,
+            autoplay: true,
+            autoplaySpeed: 2000,
+        });
+    });
+</script>
+</body>
+</html>

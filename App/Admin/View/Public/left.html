@@ -1,0 +1,122 @@
+<!--sidebar-menu-->
+<div id="sidebar">
+    <a href="#" class="visible-phone"><i class="icon icon-home"></i> 菜单栏</a>
+  <ul>
+    <li class="{$current=='index'?'active':''}"><a href="__APP__/Index/index.html"><i class="icon icon-dashboard"></i> <span>仪表盘</span></a> </li>
+
+
+      <li class="submenu {$current=='Index'?'active':''}"> <a href="#"><i class="icon icon-th-list"></i> <span>前台首页管理</span> <!-- <span class="label label-important">2</span> --></a>
+        <ul style="display:{$display=='Index'?'block':'none'}">
+         <li class="{$current=='lunbo_index'?'active':''}"><a href="__APP__/Index/lunbo_index.html">轮播图总览</a></li>
+          <li class="{$current=='add_lunbo'?'active':''}"><a href="__APP__/Index/add_lunbo.html">添加轮播图</a></li>
+          <li class="{$current=='all_index'?'active':''}"><a href="__APP__/Index/all_index.html">页面总览</a></li>
+        </ul>
+      </li>
+      <li class="submenu {$current=='Options'?'active':''}"> <a href="#"><i class="icon icon-th-list"></i> <span>前台期权服务管理</span> <!-- <span class="label label-important">2</span> --></a>
+          <ul style="display:{$display=='Options'?'block':'none'}">
+              <!--<li class="{$current=='banner_index'?'active':''}"><a href="__APP__/Options/banner_index.html">横幅图片总览</a></li>-->
+              <li class="{$current=='all_index'?'active':''}"><a href="__APP__/Options/all_index.html">页面总览</a></li>
+          </ul>
+      </li>
+      <li class="submenu {$current=='Plan'?'active':''}"> <a href="#"><i class="icon icon-th-list"></i> <span>前台e计划管理</span> <!-- <span class="label label-important">2</span> --></a>
+          <ul style="display:{$display=='Plan'?'block':'none'}">
+              <!--<li class="{$current=='banner_index'?'active':''}"><a href="__APP__/Plan/banner_index.html">横幅图片总览</a></li>-->
+              <li class="{$current=='all_index'?'active':''}"><a href="__APP__/Plan/all_index.html">页面总览</a></li>
+              <li class="{$current=='history_index'?'active':''}"><a href="__APP__/Plan/history_index.html">历史业绩总览</a></li>
+              <li class="{$current=='add_history'?'active':''}"><a href="__APP__/Plan/add_history.html">添加历史业绩</a></li>
+          </ul>
+      </li>
+      <li class="submenu {$current=='About'?'active':''}"> <a href="#"><i class="icon icon-th-list"></i> <span>前台关于我们管理</span> <!-- <span class="label label-important">2</span> --></a>
+          <ul style="display:{$display=='About'?'block':'none'}">
+              <li class="{$current=='about_index'?'active':''}"><a href="__APP__/About/about_index.html">关于我们总览</a></li>
+              <!--<li class="{$current=='banner_index'?'active':''}"><a href="__APP__/About/banner_index.html">横幅图片总览</a></li>-->
+              <li class="{$current=='add_menu'?'active':''}"><a href="__APP__/About/add_menu.html">添加关于我们菜单</a></li>
+          </ul>
+      </li>
+
+      <li class="submenu {$current=='Plan'?'active':''}"> <a href="#"><i class="icon icon-th-list"></i> <span>前台代理合作管理</span> <!-- <span class="label label-important">2</span> --></a>
+          <ul style="display:{$display=='Agent'?'block':'none'}">
+              <li class="{$current=='all_index'?'active':''}"><a href="__APP__/Agent/all_index.html">页面总览</a></li>
+          </ul>
+      </li>
+
+      <li class="submenu {$current=='About'?'active':''}"> <a href="#"><i class="icon icon-th-list"></i> <span>其他</span> <!-- <span class="label label-important">2</span> --></a>
+          <ul style="display:{$display=='Else'?'block':'none'}">
+              <li class="{$current=='code_img'?'active':''}"><a href="__APP__/Else/code_img.html">二维码总览</a></li>
+              <li class="{$current=='company'?'active':''}"><a href="__APP__/Else/company.html">公司信息</a></li>
+              <!--<li class="{$current=='item_link'?'active':''}"><a href="__APP__/Item/item_link.html">123</a></li>-->
+              <!--<li class="{$current=='item_add_time'?'active':''}"><a href="__APP__/Item/item_add_time.html">增加项目时间</a></li>-->
+              <!--<li class="{$current=='item_affirm'?'active':''}"><a href="__APP__/Item/item_affirm.html">待确认项目</a></li>-->
+          </ul>
+      </li>
+      <li><a href="__APP__/User/index.html"><i class="icon icon-tint"></i> <span>个人中心</span></a></li>
+      <!-- <li class="submenu {$current=='position'?'active':''}"> <a href="#"><i class="icon icon-th-list"></i> <span>职位管理</span> <span class="label label-important">3</span></a>
+        <ul>
+         <li class="{$current=='position_index'?'active':''}"><a href="__APP__/Index/position_index.html">职位总览</a></li>
+          <li class="{$current=='position_add'?'active':''}"><a href="__APP__/Index/position_add.html">添加职位</a></li>
+          <li><a href="__APP__/Index/form_wizard.html">Form with Wizard</a></li>
+        </ul>
+      </li> -->
+      
+      <!-- <li class="submenu {$current=='authority'?'active':''}"> <a href="#"><i class="icon icon-th-list"></i> <span>权限管理</span> <span class="label label-important">3</span></a>
+        <ul>
+         <li class="{$current=='authority_index'?'active':''}"><a href="__APP__/Index/authority_index.html">权限总览</a></li>
+          <li class="{$current=='authority_add'?'active':''}"><a href="__APP__/Index/authority_add.html">添加权限</a></li>
+          <li><a href="__APP__/Index/form_wizard.html">Form with Wizard</a></li>
+        </ul>
+      </li> -->
+
+   <!--  <li><a href="__APP__/Index/table.html"><i class="icon icon-th"></i> <span>Tables</span></a></li>
+   
+   <li><a href="__APP__/Index/full.html"><i class="icon icon-fullscreen"></i> <span>Full width</span></a></li>
+   
+   <li class="submenu"> <a href="#"><i class="icon icon-th-list"></i> <span>Forms</span> <span class="label label-important">3</span></a>
+     <ul>
+      <li><a href="__APP__/Index/form_common.html">Basic Form</a></li>
+       <li><a href="__APP__/Index/form_validation.html">Form with Validation</a></li>
+       <li><a href="__APP__/Index/form_wizard.html">Form with Wizard</a></li>
+     </ul>
+   </li>
+   
+   <li><a href="__APP__/Index/buttons.html"><i class="icon icon-tint"></i> <span>Buttons &amp; icons</span></a></li>
+   
+   <li><a href="__APP__/Index/interface1.html"><i class="icon icon-pencil"></i> <span>Eelements</span></a></li>
+   
+   <li class="submenu"> <a href="#"><i class="icon icon-file"></i> <span>Addons</span> <span class="label label-important">5</span></a>
+     <ul>
+       <li><a href="__APP__/Index/index2.html">Dashboard2</a></li>
+       <li><a href="__APP__/Index/gallery.html">Gallery</a></li>
+       <li><a href="__APP__/Index/calendar.html">Calendar</a></li>
+       <li><a href="__APP__/Index/invoice.html">Invoice</a></li>
+       <li><a href="__APP__/Index/chat.html">Chat option</a></li>
+     </ul>
+   
+   </li>
+   
+   <li class="submenu"> <a href="#"><i class="icon icon-info-sign"></i> <span>Error</span> <span class="label label-important">4</span></a>
+     <ul>
+       <li><a href="__APP__/Index/error403.html">Error 403</a></li>
+       <li><a href="__APP__/Index/error404.html">Error 404</a></li>
+       <li><a href="__APP__/Index/error405.html">Error 405</a></li>
+       <li><a href="__APP__/Index/error500.html">Error 500</a></li>
+     </ul>
+   </li>
+   
+   <li class="content"> <span>Monthly Bandwidth Transfer</span>
+     <div class="progress progress-mini progress-danger active progress-striped">
+       <div style="width: 77%;" class="bar"></div>
+     </div>
+     <span class="percent">77%</span>
+     <div class="stat">21419.94 / 14000 MB</div>
+   </li>
+   
+   <li class="content"> <span>Disk Space Usage</span>
+     <div class="progress progress-mini active progress-striped">
+       <div style="width: 87%;" class="bar"></div>
+     </div>
+     <span class="percent">87%</span>
+     <div class="stat">604.44 / 4000 MB</div>
+   </li> -->
+  
+  </ul>
+</div>
